@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AJ | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6366F1",
+                        "cyber-lime": "#D9F99D",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0rem", // Sharp edges for Brutalist feel
+                        "lg": "0rem",
+                        "xl": "0rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>.text-outline {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    color: transparent
+    }
+.grain-bg {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDtHBcPk06r0dueJ8kCx7zbssI1VB0MxULGnM6aaT6huwYp0vLbyv9-B2PWhiUXKHhTnjoUEVbs-0HIlDwVBRc2vfFlSTaEkA1Mr3PrghSxY9n1ULNMYEFN0Oc5BHAhjoskOaVeapRy04gV-T-eVVMb_sihSMnvVnyS7QfX-R9AF8vRKqadvQUBjer-1g9LV8EW6OkZ0phb44YoZvfNsQ8USJNPCJehg-mOVrrreEZkYCBxIPl3Rlb3aF3n2cZ6ImvhiNDRgCRAkvg)
+    }
+.neo-shadow {
+    box-shadow: 6px 6px 0 0 #D9F99D
+    }
+.neo-shadow:hover {
+    box-shadow: 2px 2px 0 0 #D9F99D;
+    transform: translate(4px, 4px)
+    }
+.glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    }
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+        } 50% {
+        transform: translateY(-20px) rotate(5deg);
+        } 100% {
+        transform: translateY(0px) rotate(0deg);
+        }
+    }
+.floating-shape {
+    animation: float 6s ease-in-out infinite
+    }</style>
+</head>
+
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 selection:bg-cyber-lime selection:text-background-dark overflow-x-hidden">
+<!-- Vertical Floating Dock Navigation -->
+<nav class="fixed left-6 top-1/2 -translate-y-1/2 z-50 hidden lg:flex flex-col gap-6 p-3 glass-panel rounded-full">
+<a class="group relative flex items-center justify-center size-12 rounded-full hover:bg-primary/20 transition-all text-white" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="absolute left-16 bg-white text-black px-2 py-1 text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity">HOME</span>
+</a>
+<a class="group relative flex items-center justify-center size-12 rounded-full hover:bg-primary/20 transition-all text-white" href="#">
+<span class="material-symbols-outlined">rocket_launch</span>
+<span class="absolute left-16 bg-white text-black px-2 py-1 text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity">WORK</span>
+</a>
+<a class="group relative flex items-center justify-center size-12 rounded-full hover:bg-primary/20 transition-all text-white" href="#">
+<span class="material-symbols-outlined">terminal</span>
+<span class="absolute left-16 bg-white text-black px-2 py-1 text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity">SKILLS</span>
+</a>
+<div class="h-px w-8 bg-white/10 mx-auto"></div>
+<a class="group relative flex items-center justify-center size-12 rounded-full hover:bg-primary/20 transition-all text-white" href="#">
+<span class="material-symbols-outlined">mail</span>
+<span class="absolute left-16 bg-white text-black px-2 py-1 text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity">CONTACT</span>
+</a>
+<a class="group relative flex items-center justify-center size-12 rounded-full hover:bg-primary/20 transition-all text-white" href="#">
+<span class="material-symbols-outlined">code</span>
+<span class="absolute left-16 bg-white text-black px-2 py-1 text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity">GITHUB</span>
+</a>
+</nav>
+<!-- Grain Overlay -->
+<div class="fixed inset-0 pointer-events-none opacity-20 grain-bg z-0"></div>
+<main class="relative z-10 min-h-screen flex flex-col px-6 lg:pl-32 lg:pr-12 pt-12 pb-24">
+<!-- Top Nav Branding (Mobile/Header) -->
+<header class="flex justify-between items-center mb-20">
+<div class="flex items-center gap-3">
+<div class="size-10 bg-primary flex items-center justify-center text-white font-black text-xl">AJ</div>
+<div class="hidden sm:block">
+<p class="text-sm font-bold leading-none">AJNAS</p>
+<p class="text-[10px] text-primary tracking-widest uppercase">3rd Year B.Tech CS</p>
+</div>
+</div>
+<button class="bg-primary text-white font-bold px-6 py-2 neo-shadow transition-all">
+                RESUME.PDF
+            </button>
+</header>
+<!-- Hero Section -->
+<section class="relative grid grid-cols-12 gap-6 items-center">
+<!-- Background Text Decoration -->
+<div class="absolute -top-20 -left-10 select-none pointer-events-none opacity-10">
+<h3 class="text-[120px] font-black italic text-outline leading-none"></h3>
+</div>
+<div class="col-span-12 lg:col-span-8 z-20">
+<p class="text-cyber-lime font-mono text-sm mb-4 tracking-tighter">// HELLO WORLD, I AM</p>
+<h1 class="text-6xl md:text-8xl lg:text-[140px] font-black leading-[0.85] tracking-tighter uppercase break-words mb-8">
+<span class="text-outline block">MUHAMMED</span>
+<span class="relative inline-block text-white">
+                        AJNAS N P
+                        <span class="absolute -bottom-2 left-0 w-full h-4 bg-primary/30 -z-10"></span>
+</span>
+</h1>
+<div class="flex flex-col md:flex-row gap-8 items-start max-w-2xl">
+<p class="text-lg text-slate-400 leading-relaxed font-light">
+                        Crafting sophisticated digital experiences with <span class="text-white font-medium">Neo-Brutalist precision</span>. 
+                        Focused on Full Stack Architecture and AI implementation.
+                    </p>
+<div class="flex gap-4 shrink-0">
+<button class="bg-white text-black px-8 py-4 font-black neo-shadow hover:bg-cyber-lime transition-colors">
+                            VIEW WORK
+                        </button>
+</div>
+</div>
+</div>
+<!-- Floating 3D Shape Mockup -->
+<div class="col-span-12 lg:col-span-4 relative flex justify-center items-center h-[400px]">
+<div class="floating-shape relative size-64 md:size-80">
+<div class="absolute inset-0 bg-primary/20 blur-[80px] rounded-full"></div>
+<div class="absolute inset-0 border-2 border-cyber-lime/40 rotate-12"></div>
+<div class="absolute inset-4 glass-panel border-white/20 flex items-center justify-center overflow-hidden">
+<img alt="Abstract 3D Shape" class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700" data-alt="Abstract vibrant 3D geometric glass shape" src="./src/image/aj.jpg"/>
+</div>
+<div class="absolute -bottom-6 -right-6 p-4 glass-panel border-cyber-lime/50">
+<p class="text-[10px] font-mono text-cyber-lime leading-tight uppercase tracking-widest">System_Status</p>
+<p class="text-sm font-bold text-white">OPEN FOR INTERNS</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Info Panels -->
+<section class="mt-32 grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Experience Block -->
+<div class="glass-panel p-8 border-l-4 border-l-primary flex flex-col justify-between h-64 md:col-span-1">
+<div>
+<h4 class="text-xs font-black text-primary tracking-[0.2em] uppercase mb-4">Focus</h4>
+<p class="text-2xl font-bold leading-tight italic">Merging aesthetic brutality with performance code.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-cyber-lime">bolt</span>
+<span class="text-xs font-mono">STABLE VERSION 2.4.0</span>
+</div>
+</div>
+<!-- Tech Stack Block -->
+<div class="glass-panel p-8 md:col-span-2 overflow-hidden relative">
+<h4 class="text-xs font-black text-slate-500 tracking-[0.2em] uppercase mb-8">Current Stack</h4>
+<div class="flex flex-wrap gap-3">
+<div class="px-4 py-2 border border-white/10 hover:border-cyber-lime hover:text-cyber-lime transition-colors font-bold text-sm">TYPESCRIPT</div>
+<div class="px-4 py-2 border border-white/10 hover:border-cyber-lime hover:text-cyber-lime transition-colors font-bold text-sm">REACT</div>
+<div class="px-4 py-2 border border-white/10 hover:border-cyber-lime hover:text-cyber-lime transition-colors font-bold text-sm">NEXT.JS</div>
+<div class="px-4 py-2 border border-white/10 hover:border-cyber-lime hover:text-cyber-lime transition-colors font-bold text-sm">PYTHON</div>
+<div class="px-4 py-2 border border-white/10 hover:border-cyber-lime hover:text-cyber-lime transition-colors font-bold text-sm">POSTGRESQL</div>
+<div class="px-4 py-2 border border-white/10 hover:border-cyber-lime hover:text-cyber-lime transition-colors font-bold text-sm">AWS</div>
+<div class="px-4 py-2 border border-white/10 hover:border-cyber-lime hover:text-cyber-lime transition-colors font-bold text-sm">DOCKER</div>
+<div class="px-4 py-2 border border-white/10 hover:border-cyber-lime hover:text-cyber-lime transition-colors font-bold text-sm">RUST</div>
+</div>
+<!-- Abstract Deco -->
+<div class="absolute bottom-0 right-0 p-2 opacity-5">
+<span class="material-symbols-outlined text-[120px]">architecture</span>
+</div>
+</div>
+</section>
+<!-- Status Bar -->
+<footer class="mt-20 flex flex-col md:flex-row justify-between items-center gap-6 pt-12 border-t border-white/10">
+<div class="flex gap-8 text-xs font-mono text-slate-500 uppercase tracking-widest">
+<div class="flex items-center gap-2">
+<span class="size-2 bg-green-500 rounded-full"></span>
+                    Available for projects
+                </div>
+
+</div>
+<div class="flex gap-6">
+<a class="hover:text-cyber-lime transition-colors text-sm font-bold" href="#">LINKEDIN</a>
+<a class="hover:text-cyber-lime transition-colors text-sm font-bold" href="#">INSTAGRAM</a>
+<a class="hover:text-cyber-lime transition-colors text-sm font-bold" href="#">READ.CV</a>
+</div>
+</footer>
+</main>
+<!-- Background Decoration Grid -->
+<div class="fixed inset-0 z-[-1] pointer-events-none overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-screen bg-gradient-to-l from-primary/5 to-transparent"></div>
+<div class="absolute inset-0" style="background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 40px 40px;"></div>
+</div>
+</body></html>
