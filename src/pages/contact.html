@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact AJ | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6366F1",
+                        "cyber-lime": "#D9F99D",
+                        "background-dark": "#121212",
+                        "terminal-black": "#0A0A0A",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "mono": ["Fira Code", "monospace"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0rem",
+                    },
+                    animation: {
+                        'marquee': 'marquee 25s linear infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .text-outline {
+            -webkit-text-stroke: 2px rgba(255, 255, 255, 0.4);
+            color: transparent;
+        }
+        .grain-bg {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDtHBcPk06r0dueJ8kCx7zbssI1VB0MxULGnM6aaT6huwYp0vLbyv9-B2PWhiUXKHhTnjoUEVbs-0HIlDwVBRc2vfFlSTaEkA1Mr3PrghSxY9n1ULNMYEFN0Oc5BHAhjoskOaVeapRy04gV-T-eVVMb_sihSMnvVnyS7QfX-R9AF8vRKqadvQUBjer-1g9LV8EW6OkZ0phb44YoZvfNsQ8USJNPCJehg-mOVrrreEZkYCBxIPl3Rlb3aF3n2cZ6ImvhiNDRgCRAkvg);
+        }
+        .neo-shadow-lime {
+            box-shadow: 12px 12px 0 0 #D9F99D;
+        }
+        .neo-shadow-primary {
+            box-shadow: 8px 8px 0 0 #6366F1;
+        }
+        .terminal-header {
+            background: linear-gradient(90deg, #1A1A1A 0%, #2A2A2A 100%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-panel-mobile {
+            background: rgba(18, 18, 18, 0.95);
+            backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .blink {
+            animation: blinker 1s step-start infinite;
+        }
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-display text-slate-100 selection:bg-cyber-lime selection:text-background-dark overflow-x-hidden pb-24 lg:pb-0">
+<div class="fixed inset-0 pointer-events-none opacity-20 grain-bg z-0"></div>
+<nav class="fixed left-6 top-1/2 -translate-y-1/2 z-50 hidden lg:flex flex-col gap-6 p-3 glass-panel rounded-full">
+<a class="group relative flex items-center justify-center size-12 rounded-full hover:bg-primary/20 transition-all text-white" href="./../../index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="absolute left-16 bg-white text-black px-2 py-1 text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity">HOME</span>
+</a>
+<a class="group relative flex items-center justify-center size-12 rounded-full hover:bg-primary/20 transition-all text-white" href="#">
+<span class="material-symbols-outlined">rocket_launch</span>
+<span class="absolute left-16 bg-white text-black px-2 py-1 text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity">WORK</span>
+</a>
+<a class="group relative flex items-center justify-center size-12 rounded-full hover:bg-primary/20 transition-all text-white" href="#">
+<span class="material-symbols-outlined">terminal</span>
+<span class="absolute left-16 bg-white text-black px-2 py-1 text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity">SKILLS</span>
+</a>
+<div class="h-px w-8 bg-white/10 mx-auto"></div>
+<a class="group relative flex items-center justify-center size-12 rounded-full bg-primary/40 text-cyber-lime" href="contact.html">
+<span class="material-symbols-outlined">alternate_email</span>
+<span class="absolute left-16 bg-white text-black px-2 py-1 text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity">CONTACT</span>
+</a>
+</nav>
+<nav class="fixed bottom-0 left-0 right-0 z-[60] lg:hidden flex justify-around items-center p-4 glass-panel-mobile border-t border-white/10">
+<a class="flex flex-col items-center justify-center gap-1 text-white/60 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-white/60 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">rocket_launch</span>
+<span class="text-[10px] font-bold">WORK</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-white/60 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">terminal</span>
+<span class="text-[10px] font-bold">SKILLS</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-cyber-lime" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+<span class="text-[10px] font-bold">CONTACT</span>
+</a>
+</nav>
+<main class="relative z-10 min-h-screen flex flex-col px-4 md:px-6 lg:pl-32 lg:pr-24 py-8 md:py-12 pb-32">
+<header class="flex justify-between items-center mb-8 md:mb-16">
+<div class="flex items-center gap-3">
+<div class="size-10 md:size-12 bg-cyber-lime flex items-center justify-center text-black font-black text-xl md:text-2xl">AJ</div>
+<div>
+<p class="text-xs md:text-sm font-bold leading-none tracking-tighter">AJNAS</p>
+<p class="text-[8px] md:text-[10px] text-cyber-lime tracking-[0.2em] uppercase font-mono mt-1">v3.0.0-PROD</p>
+</div>
+</div>
+
+</header>
+<div class="grid grid-cols-12 gap-8 lg:gap-16">
+<div class="col-span-12 lg:col-span-7">
+<h1 class="text-[3.5rem] md:text-7xl lg:text-[120px] font-black leading-[0.85] tracking-tighter uppercase mb-8 md:mb-12">
+<span class="text-outline block">GET_IN</span>
+<span class="text-white block">TOUCH</span>
+</h1>
+<div class="bg-terminal-black border-2 border-white/10 neo-shadow-primary overflow-hidden font-mono">
+<div class="terminal-header px-4 py-2 flex items-center justify-between">
+<div class="flex gap-2">
+<div class="size-3 rounded-full bg-red-500/50"></div>
+<div class="size-3 rounded-full bg-yellow-500/50"></div>
+<div class="size-3 rounded-full bg-green-500/50"></div>
+</div>
+<div class="text-[10px] text-slate-500 tracking-widest uppercase">bash — contact.sh</div>
+<div class="w-12"></div>
+</div>
+<div class="p-4 md:p-6 lg:p-10 space-y-6 md:space-y-8">
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-cyber-lime text-xs md:text-sm">
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span>export VISITOR_NAME=</span>
+</div>
+<input class="w-full bg-transparent border-none focus:ring-0 text-white text-lg md:text-xl p-0 placeholder:text-slate-800" placeholder="'your_name_here'" type="text"/>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-primary text-xs md:text-sm">
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span>export VISITOR_EMAIL=</span>
+</div>
+<input class="w-full bg-transparent border-none focus:ring-0 text-white text-lg md:text-xl p-0 placeholder:text-slate-800" placeholder="'email@example.com'" type="email"/>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-slate-500 text-xs md:text-sm">
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span>write_message --body</span>
+</div>
+<textarea class="w-full bg-transparent border-none focus:ring-0 text-white text-lg md:text-xl p-0 placeholder:text-slate-800 resize-none" placeholder="Enter your proposal..." rows="4"></textarea>
+</div>
+<div class="pt-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+<button class="w-full sm:w-auto bg-primary text-white px-8 py-3 font-bold flex items-center justify-center gap-3 group transition-all hover:bg-white hover:text-black">
+                                SEND_PAYLOAD
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">send</span>
+</button>
+<span class="text-xs text-slate-600 animate-pulse hidden sm:inline-block">SYSTEM_READY_FOR_INPUT</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-5 flex flex-col gap-8">
+<div class="bg-white text-black p-6 md:p-10 neo-shadow-lime flex flex-col justify-between h-auto lg:h-full min-h-[300px] md:min-h-[400px]">
+<div>
+<h3 class="text-2xl md:text-4xl font-black italic mb-6 md:mb-8 tracking-tighter">DIRECT_ACCESS</h3>
+<div class="space-y-4 md:space-y-6">
+<a class="group flex items-center justify-between border-b-2 border-black/10 pb-4 hover:border-black transition-colors" href="#">
+<span class="text-lg md:text-2xl font-bold">LINKEDIN</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">north_east</span>
+</a>
+<a class="group flex items-center justify-between border-b-2 border-black/10 pb-4 hover:border-black transition-colors" href="#">
+<span class="text-lg md:text-2xl font-bold">GITHUB</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">north_east</span>
+</a>
+<a class="group flex items-center justify-between border-b-2 border-black/10 pb-4 hover:border-black transition-colors" href="#">
+<span class="text-lg md:text-2xl font-bold">INSTAGRAM</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">north_east</span>
+</a>
+</div>
+</div>
+<div class="mt-8 md:mt-12">
+<p class="text-xs md:text-sm font-mono leading-relaxed opacity-60">
+                            Available for high-impact collaborations, internships, and open-source contributions. Response time: &lt; 24h.
+                        </p>
+</div>
+</div>
+<div class="glass-panel p-6 md:p-8 border-r-4 border-r-cyber-lime relative overflow-hidden group">
+<div class="relative z-10">
+<p class="text-xs font-black text-cyber-lime tracking-[0.2em] mb-2 uppercase">Current Encryption</p>
+<p class="text-lg md:text-xl font-mono text-white/50">RSA_4096_AES_256</p>
+</div>
+<span class="material-symbols-outlined absolute -right-4 -bottom-4 text-[80px] md:text-[120px] text-white/5 opacity-20 group-hover:scale-110 transition-transform">security</span>
+</div>
+</div>
+</div>
+<div class="fixed bottom-[4.5rem] lg:bottom-0 left-0 w-full bg-cyber-lime py-2 z-40 overflow-hidden border-t-2 border-black">
+<div class="flex items-center overflow-hidden w-full">
+<div class="animate-marquee whitespace-nowrap flex items-center gap-4">
+<div class="font-mono text-black font-black text-xs uppercase flex items-center gap-4">
+<span>LOCATION: EARTH // SOL_SYSTEM</span>
+<span class="size-2 bg-black rounded-full"></span>
+<span>STATUS: OPEN FOR INTERNSHIPS</span>
+<span class="size-2 bg-black rounded-full"></span>
+<span>ENCRYPTED_COMMS_ACTIVE</span>
+<span class="size-2 bg-black rounded-full"></span>
+<span>TIME: <span id="clock">12:00:00</span> UTC</span>
+</div>
+<div class="font-mono text-black font-black text-xs uppercase flex items-center gap-4 px-4">
+<span>LOCATION: EARTH // SOL_SYSTEM</span>
+<span class="size-2 bg-black rounded-full"></span>
+<span>STATUS: OPEN FOR INTERNSHIPS</span>
+<span class="size-2 bg-black rounded-full"></span>
+<span>ENCRYPTED_COMMS_ACTIVE</span>
+<span class="size-2 bg-black rounded-full"></span>
+<span>TIME: 12:00:00 UTC</span>
+</div>
+<div class="font-mono text-black font-black text-xs uppercase flex items-center gap-4">
+<span>LOCATION: EARTH // SOL_SYSTEM</span>
+<span class="size-2 bg-black rounded-full"></span>
+<span>STATUS: OPEN FOR INTERNSHIPS</span>
+<span class="size-2 bg-black rounded-full"></span>
+<span>ENCRYPTED_COMMS_ACTIVE</span>
+<span class="size-2 bg-black rounded-full"></span>
+<span>TIME: 12:00:00 UTC</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed inset-0 z-[-1] pointer-events-none">
+<div class="absolute top-0 right-0 w-1/3 h-screen bg-gradient-to-l from-primary/5 to-transparent"></div>
+<div class="absolute inset-0" style="background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 60px 60px;"></div>
+<div class="absolute top-[20%] right-[10%] w-[400px] h-[400px] bg-primary/10 blur-[120px] rounded-full"></div>
+</div>
+</body></html>
